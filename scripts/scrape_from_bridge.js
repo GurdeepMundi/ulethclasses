@@ -38,5 +38,23 @@ while (ptr < elements.length){
     // Increment the pointer to the next course
     ptr += 14;
 }
-// print the courses array
-console.log(courses);
+
+// Convert the list to a JSON string
+const jsonString = JSON.stringify(courses, null, 2);
+
+// Create a Blob object with the JSON string
+const blob = new Blob([jsonString], { type: 'application/json' });
+
+// Create a temporary URL for the Blob object
+const url = URL.createObjectURL(blob);
+
+// Create an anchor element
+const anchor = document.createElement('a');
+anchor.href = url;
+anchor.download = 'courses.json'; // Set the desired filename
+
+// Trigger a click event on the anchor element
+anchor.click();
+
+// Clean up by revoking the URL object
+URL.revokeObjectURL(url);
