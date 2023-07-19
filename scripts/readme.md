@@ -1,0 +1,1 @@
+### These files are used for scraping data from the internet for collecting courses information.

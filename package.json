@@ -1,0 +1,29 @@
+{
+  "name": "ulethclasses",
+  "version": "1.0.0",
+  "description": "a modern and user-friendly web application designed to simplify the process of browsing and shortlisting courses at the University of Lethbridge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GurdeepMundi/ulethclasses.git"
+  },
+  "keywords": [
+    "course-selection",
+    "education",
+    "univeristy",
+    "course-catalog",
+    "schedule-planning"
+  ],
+  "author": "Gurdeep Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GurdeepMundi/ulethclasses/issues"
+  },
+  "homepage": "https://github.com/GurdeepMundi/ulethclasses#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
